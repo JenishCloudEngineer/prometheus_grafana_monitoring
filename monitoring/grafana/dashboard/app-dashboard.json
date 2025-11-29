@@ -1,0 +1,32 @@
+{
+  "annotations": {
+    "list": []
+  },
+  "panels": [
+    {
+      "type": "timeseries",
+      "title": "HTTP Requests",
+      "targets": [
+        {
+          "expr": "sample_http_requests_total",
+          "legendFormat": "requests"
+        }
+      ],
+      "gridPos": { "x": 0, "y": 0, "w": 24, "h": 7 }
+    },
+    {
+      "type": "timeseries",
+      "title": "HTTP Errors",
+      "targets": [
+        {
+          "expr": "sample_http_errors_total",
+          "legendFormat": "errors"
+        }
+      ],
+      "gridPos": { "x": 0, "y": 8, "w": 24, "h": 7 }
+    }
+  ],
+  "schemaVersion": 36,
+  "title": "Sample App Monitoring",
+  "version": 1
+}
